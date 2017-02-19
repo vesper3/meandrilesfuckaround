@@ -6,6 +6,7 @@ public class Cube_Move : MonoBehaviour {
 
     public float rotationRate = 3.0f;
 
+    public bool No_Phone = false;
 
     // Use this for initialization
     void Start ()
@@ -16,6 +17,8 @@ public class Cube_Move : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (No_Phone)
+            transform.Rotate(new Vector3(1, 1) * rotationRate);
 
         // get the user touch inpun
         foreach (Touch touch in Input.touches)
