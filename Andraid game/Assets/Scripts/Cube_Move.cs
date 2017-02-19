@@ -20,6 +20,7 @@ public class Cube_Move : MonoBehaviour {
         if (No_Phone)
             transform.Rotate(new Vector3(1, 1) * rotationRate);
 
+
         // get the user touch inpun
         foreach (Touch touch in Input.touches)
         {
