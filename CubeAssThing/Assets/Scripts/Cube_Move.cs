@@ -16,6 +16,7 @@ public class Cube_Move : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+
         // get the user touch inpun
         foreach (Touch touch in Input.touches)
         {
